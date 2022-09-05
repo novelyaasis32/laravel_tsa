@@ -13,9 +13,18 @@ class PageController extends Controller
      */
     public function index()
     {
-        return ' Selamat Datang';
+        return 'Selamat Datang';
     }
 
+    public function about()
+    {
+        return 'NIM: 2241727026 <br> Nama: Novelya Asis Sholikha <br> Kelas: Web-B';
+    }
+
+    public function articles($id)
+    {
+        return 'Halaman artikel ini dengan id '.$id;
+    }
     /**
      * Show the form for creating a new resource.
      *
