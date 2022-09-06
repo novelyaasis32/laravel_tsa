@@ -4,17 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ArticleController extends Controller
+class AboutUsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function AboutUs()
     {
-        
+        return redirect()->to('https://www.educastudio.com/about-us');
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -44,8 +45,7 @@ class ArticleController extends Controller
      */
     public function show($id)
     {
-        return 'Halaman artikel ini dengan id '.$id;
-    
+        //
     }
 
     /**

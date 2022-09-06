@@ -4,17 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ArticleController extends Controller
+class NewsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        
+    public function news($id = null){
+        if($id == null) return  '<a href = "https://www.educastudio.com/news">
+            https://www.educastudio.com/news</a>';
+        return '<a href = "https://www.educastudio.com/news/' .$id.'">
+        https://www.educastudio.com/news/' .$id.'</a>';
+    
     }
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -42,11 +47,10 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        return 'Halaman artikel ini dengan id '.$id;
-    
-    }
+    // public function show($id)
+    // {
+    //     return '<a href="https://www.educastudio.com/category/'.$id.'">https://www.educastudio.com/category/'.$id.'</a>';
+    // }
 
     /**
      * Show the form for editing the specified resource.
