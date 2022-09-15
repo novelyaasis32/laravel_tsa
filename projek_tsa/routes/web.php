@@ -11,6 +11,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\MahasiswaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -73,3 +74,5 @@ Route::prefix('program')->group(function (){
 Route::get('/aboutus', [AboutUsController::class, 'AboutUs']);
 
 Route::resource('/contactus', ContactUsController::class);
+
+Route::resource('/mahasiswa', MahasiswaController::class);
