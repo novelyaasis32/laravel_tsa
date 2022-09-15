@@ -75,4 +75,6 @@ Route::get('/aboutus', [AboutUsController::class, 'AboutUs']);
 
 Route::resource('/contactus', ContactUsController::class);
 
-Route::resource('/mahasiswa', MahasiswaController::class);
+// Route::resource('/mahasiswa', MahasiswaController::class);
+
+Route::resource('mahasiswa', MahasiswaController::class);
